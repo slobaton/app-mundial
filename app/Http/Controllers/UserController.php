@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Game;
-use Inertia\Inertia;
 use Illuminate\Http\Request;
 
-class GameController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +13,7 @@ class GameController extends Controller
      */
     public function index()
     {
-        $games = Game::all();
-
-        return Inertia::render('Games/Index', compact('games'));
+        //
     }
 
     /**

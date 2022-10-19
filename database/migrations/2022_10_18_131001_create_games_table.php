@@ -24,7 +24,8 @@ return new class extends Migration
                 ->constrained('teams')
                 ->nullable();
             $table->date('date');
-            $table->json('score');
+            $table->json('score')
+                ->nullable();
             $table->timestamps();
         });
     }
